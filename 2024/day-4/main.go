@@ -65,7 +65,7 @@ func countStars(data string) (int, error) {
 			if string(lines[i][j]) == "A" {
 				// M M
 				//
-				//	A
+				//  A
 				//
 				// S S
 				M00 := false
@@ -94,7 +94,7 @@ func countStars(data string) (int, error) {
 			if string(lines[i][j]) == "A" {
 				// S S
 				//
-				//	A
+				//  A
 				//
 				// M M
 				S00 := false
@@ -123,7 +123,7 @@ func countStars(data string) (int, error) {
 			if string(lines[i][j]) == "A" {
 				// M S
 				//
-				//	A
+				//  A
 				//
 				// M S
 				M00 := false
@@ -152,7 +152,7 @@ func countStars(data string) (int, error) {
 			if string(lines[i][j]) == "A" {
 				// S M
 				//
-				//	A
+				//  A
 				//
 				// S M
 				S00 := false
