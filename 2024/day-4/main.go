@@ -68,10 +68,7 @@ func countStars(data string) (int, error) {
 				//  A
 				//
 				// S S
-				M00 := false
-				M02 := false
-				S20 := false
-				S22 := false
+				var M00, M02, S20, S22 bool
 
 				if i-1 >= 0 && j-1 >= 0 && string(lines[i-1][j-1]) == "M" {
 					M00 = true
@@ -97,10 +94,7 @@ func countStars(data string) (int, error) {
 				//  A
 				//
 				// M M
-				S00 := false
-				S02 := false
-				M20 := false
-				M22 := false
+				var S00, S02, M20, M22 bool
 
 				if i-1 >= 0 && j-1 >= 0 && string(lines[i-1][j-1]) == "S" {
 					S00 = true
@@ -126,10 +120,7 @@ func countStars(data string) (int, error) {
 				//  A
 				//
 				// M S
-				M00 := false
-				S02 := false
-				M20 := false
-				S22 := false
+				var M00, S02, M20, S22 bool
 
 				if i-1 >= 0 && j-1 >= 0 && string(lines[i-1][j-1]) == "M" {
 					M00 = true
@@ -155,10 +146,7 @@ func countStars(data string) (int, error) {
 				//  A
 				//
 				// S M
-				S00 := false
-				M02 := false
-				S20 := false
-				M22 := false
+				var S00, M02, S20, M22 bool
 
 				if i-1 >= 0 && j-1 >= 0 && string(lines[i-1][j-1]) == "S" {
 					S00 = true
